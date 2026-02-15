@@ -15,6 +15,7 @@
 .program{
     flex-basis: 31%;
     position: relative;
+    transition: 0.5s ease;
 }
 
 .caption{
@@ -44,4 +45,9 @@
 .caption img {
     width: 60px;
     margin-bottom: 10px;
+}
+
+.program:hover{
+    transform: scale(0.99);
+    transition: 0.3s ease;
 }
