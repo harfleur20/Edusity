@@ -40,6 +40,17 @@
     margin-right: 10px;
 }
 
+.contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact form label{
+    display: block;
+    margin: 0 0 6px;
+}
+
 .contact form input, .contact form textarea{
     display: block;
     width: 100%;
@@ -47,9 +58,50 @@
     padding: 15px;
     border: none;
     outline: none;
-    margin-bottom: 15px;
-    margin-top: 5px;
+    margin: 0 0 18px;
     resize: none;
+}
+
+.contact form .phone-input{
+    --PhoneInputCountryFlag-height: 0.95em;
+    --PhoneInputCountrySelectArrow-color: #000f38;
+    --PhoneInput-color--focus: #000f38;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #EBECFE;
+    border: 1px solid transparent;
+    padding: 0 15px;
+    margin: 0 0 18px;
+}
+
+.contact form .phone-input .PhoneInputCountry{
+    margin-right: 10px;
+}
+
+.contact form .phone-input .PhoneInputCountrySelect{
+    cursor: pointer;
+}
+
+.contact form .phone-input .PhoneInputInput{
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.contact form .phone-input.phone-input-error{
+    border-color: #d93025;
+}
+
+.contact form .phone-error{
+    display: block;
+    font-size: 12px;
+    color: #d93025;
+    margin: -10px 0 12px;
 }
 
 .contact-col span{
